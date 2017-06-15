@@ -1,0 +1,317 @@
+                   #fichier-article {
+                            width: 960px;
+                            margin: 0 auto;
+
+                        }
+
+                      /*FORMULAIRE-DE-RECHERCHE*/
+
+                        #formulaire-form{
+                            width: 100%;
+                        }
+
+                       #formulaire-form .form {
+                            background-color: #EEEDEB;
+                            opacity: 0.9;
+                            height: 90px;
+                            margin-top: 20px;
+                            width: 100%;
+                        }
+                        .form button {
+                            margin-top: 20px;
+                            padding: 10px;
+                            width: 20%;
+                            background-color: #753C52;
+                            color: azure;
+                            margin-left: 10px;
+                            font-size: 1em;
+                        }
+                        .form label {
+                            margin-left: 10px;
+                            font-size: 1.4em;
+                        }
+                        .form input {
+                            margin-left: 10px;
+                        }
+                       
+                       /* LE-SLIDER*/
+
+                       #slider {
+                            width: 100%;
+                        }
+
+                        #slider h3 {
+                            text-align: center;
+                            margin-top: 40px;
+                            font-size: 1.8em;
+                            font-family: 'Lato', sans-serif;
+                        }
+                        .slide-img img {
+                            width: 100%;
+                            height: 430px;
+                            margin-top: 40px;
+                        }
+
+                       /* DETAILS*/
+
+                        #description {
+                            width: 100%;
+                        }
+                        .sous-description {
+                            width: 66%;
+                            float: left;
+                        }
+                        .sous-description article {
+                            float: left;
+                            width: 23%;
+                            margin-left: px;
+                            border-left: 1px solid gray;
+                            padding: 20px;
+                            margin-top: 30px;
+                        }
+                        .sous-description article p {
+                            margin-top: 20px;
+                        }
+                        .sous-description h5 {
+                            font-family: 'Lato', sans-serif;
+                            color: #753C52;
+                        }
+
+                         /* AVANTAGE*/
+
+                        #avantage {
+                            width: 32%;
+                            float: left;
+                            background-color: #F0F0F0;
+                            height: 789px;
+                        }
+                        .avantage-entete h4 {
+                            text-align: center;
+                            margin-top: 40px;
+                        }
+                        .avantage-entete button {
+                            margin-top: 40px;
+                            padding: 10px;
+                            width: 100%;
+                            background-color: #753C52;
+                            color: azure;
+                            font-size: 1.5em;
+                        }
+                        .avantage-contenu h3 {
+                            margin-top: 90px;
+                            margin-bottom: 30px;
+                            text-align: center;
+                            color: #753C52;
+                        }
+                        .avantage-contenu p {
+                            margin-top: 20px;
+                            vertical-align: middle;
+                            color: #753C52;
+                            font-size: 1.1em;
+                        }
+
+                       /* CARACTERISTIQUES*/
+
+                        #caracteristiques {
+                            width: 66%;
+                            float: left;
+                        }
+                        #caracteristiques article {
+                            float: left;
+                            width: 100%;
+                        }
+                        #caracteristiques h3 {
+                            font-family: 'Lato', sans-serif;
+                            width: 100%;
+                        }
+                        #caracteristiques li {
+                            font-family: 'Lato', sans-serif;
+                        }
+                        #caracteristiques p {
+                            width: 100%;
+                            font-family: 'open sans', sans-serif;
+                        }
+
+                       /* PIED-PAGE*/
+
+                        #fichier-article footer {
+                            float: left;
+                            width: 100%;
+                            margin-top: 30px;
+                            margin-bottom: 25px;
+                        }
+                        #contact {
+                            float: left;
+                            width: 20%;
+                            background-color: #000000;
+                            color: white;
+                        }
+                        .frame iframe {
+                            width: 70%;
+                        }
+                        
+
+                        /*-----------MEDIA-QUERIES------------*/
+
+                         @media screen and (max-width: 960px){
+                             #fichier-article{
+                            width: 100%;
+                            overflow: hidden;
+                        }
+
+                         #formulaire-form .form {
+                            width: 100%;
+                            display: block;
+                        }
+                        .form button {
+                            padding: 5px;
+                            width: 40%;
+                            font-size: 1em;
+                        }
+                        #slider {
+                            width: 100%;
+                            margin-right: 0px;
+                            margin-left: 0px;
+                             margin-top: 30px;
+                        }
+                        .slide-img img {
+                            width: 100%;
+                            margin-right: 0px;
+                            margin-left: 0px;
+                            height: 300px;
+                        }
+
+                        #description {
+                            width: 100%;
+                        }
+                        .sous-description {
+                            width: 60%; 
+                        }
+                        .sous-description article{
+                            float: none;
+                        }
+                        #avantage {
+                            width: 40%;
+                        }
+                        .avantage-entete button {
+                           
+                            padding: 3px;
+                            font-size: 1.1em;
+                        }
+
+                        #fichier-article footer {
+                            float: left;
+                            width: 100%;
+                            margin-top: 10px;
+                            margin-bottom: 0px;
+                        }
+                        #contact {
+                            width: 100%;
+                        }
+                        .frame iframe {
+                            margin-top: 10px;
+                            width: 100%;
+                            height: 300px;
+                        }    
+
+                         }
+
+
+                       /* POUR MOBILES*/
+
+                     @media screen and (max-width: 500px){
+                        #fichier-article{
+                            width: 100%;
+                            overflow: hidden;
+                        }
+
+                        #formulaire-form .form {
+                            width: 100%;
+                            display: block;
+                        }
+                        .form button {
+                            padding: 3px;
+                            width: 40%;
+                            font-size: 0.7em;
+                        }
+                        .form input{
+                            width: 35%;
+                        }
+                         #slider {
+                            width: 100%;
+                            margin-right: 0px;
+                            margin-left: 0px;
+                             margin-top: 30px;
+                        }
+                        #slider h3 {
+                            display: none;
+                        }
+
+                        .slide-img img {
+                            width: 100%;
+                            margin-right: 0px;
+                            margin-left: 0px;
+                            height: 230px;
+                        }
+                        #description {
+                            width: 100%;
+                        }
+                        .sous-description {
+                            width: 100%;
+                            display: inline-block;
+                        }
+                        .sous-description article {
+                            display: inline-block;
+                            width: 100%;
+                           
+                        }
+                        #avantage {
+                            width: 100%;
+                            clear: both;
+                            float: none;
+                        }
+
+                        .avantage-entete button {
+                           
+                            padding: 3px;
+                            font-size: 1em;
+                        }
+                        #caracteristiques {
+                            width: 100%;
+                            margin-left: 0px;
+                            padding: 0px;
+                        }
+                        #caracteristiques article {
+                            width: 100%;
+                        }
+                        #caracteristiques p {
+                            width: 90%;
+                            font-family: none;
+                            margin-left: 0px;
+
+                     }
+                     #caracteristiques li {
+                            font-family: none;
+                            width: 90%;
+                        }
+                        #fichier-article footer {
+                            float: left;
+                            width: 100%;
+                            margin-top: 10px;
+                            margin-bottom: 0px;
+                        }
+                        #contact {
+                            
+                            width: 100%;
+        
+                        }
+                        .frame iframe {
+                            width: 100%;
+                            height: 240px;
+                        }    
+
+                 }
+
+                      
+
+    

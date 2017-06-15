@@ -1,0 +1,646 @@
+      @meta charset="utf-8";
+       /*REGLAGES*/
+       
+       * {
+           margin: 0px;
+           padding: 0px;
+       }
+       
+       *,
+       *::before,
+       *::after {
+           box-sizing: border-box;
+       }
+       
+       .clearfix::before,
+       .clearfix::after {
+           content: " ";
+           display: table;
+       }
+       
+       .clearfix::after {
+           clear: both;
+       }
+       /*Fichier produit*/
+       
+       #fichier-produit {
+           width: 960px;
+           margin: 0 auto;
+           overflow: hidden;
+       }
+       /*ENTETE*/
+       
+       nav {
+           float: left;
+           margin-top: 20px;
+           width: 50%;
+       }
+       
+       nav li {
+           list-style-type: none;
+       }
+       
+       ul img {
+           width: 17px;
+           height: 15px;
+           margin-right: 10px;
+           margin-left: 10px;
+           background-color: darkgrey;
+       }
+       /*LOGO-CENTRALE*/
+       
+       .logo {
+           width: 100%;
+       }
+       
+       .logo img {
+           margin-left: 398px;
+           margin-top: 53px;
+           width: 16%;
+       }
+
+       .logo h1{
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+       }
+       /*MENU DROIT LES RESEAUX SOCIAUX*/
+       
+       .reseau {
+           margin-left: 780px;
+           width: 25%;
+       }
+       
+       .reseau button {
+           background-color: #A5793C;
+           padding: 7px 7px 10px 20px;
+           margin-top: 10px;
+           text-align: center;
+           color: white;
+           font-size: 0.8em;
+       }
+       
+       .reseau-logo img {
+           width: 9%;
+           height: 20px;
+           margin-left: 5px;
+       }
+       /*LE-FORMULAIRE-DE-RECHERCHE-FICHIER-PRODUIT*/
+       
+       #form2 button {
+           background-color: #A5793C;
+           padding: 7px 57px 10px 48px;
+           margin-top: 10px;
+           text-align: center;
+           color: white;
+       }
+       
+       #form2 {
+           width: 100%;
+       }
+       
+       #form2 form {
+           border: 2px solid black;
+           padding: 21px 5px 20px 28px;
+           margin-top: 50px;
+       }
+       /*PARTIE-PRINCIPALE*/
+       
+       #container {
+           width: 100%;
+       }
+       
+       .container-contenu {
+           float: left;
+           width: 100%;
+           margin-top: -5px;
+       }
+       
+       .container-contenu img {
+           width: 100%;
+           height: 200px;
+       }
+       
+       .container-contenu img:hover {
+           transform: scale(1.1);
+       }
+       
+       .container-sous {
+           position: relative;
+           float: left;
+           width: 33%;
+           margin-left: 15px;
+           margin-top: 20px;
+           width: 300px;
+           height: 500px;
+           background-color: darkgrey;
+       }
+       
+       .container-sous button {
+           margin-left: 50px;
+           margin-top: 20px;
+           background-color: #A5793C;
+           width: 67%;
+           padding: 7px 7px 7px 7px;
+           color: white;
+           font-size: 1em;
+       }
+       /*REGLAGE POUR LES LIENS*/
+       
+       a {
+           text-decoration: none;
+           font-family: 'Vollkorn', serif;
+       }
+       
+       a h3 {
+           text-align: center;
+           margin-top: 10px;
+           color: #A5793C;
+       }
+       
+       a h3:hover {
+           color: cornsilk;
+       }
+       
+       .details {
+           float: left;
+           width: 100%;
+       }
+       /*DESCRIPTION-DES-HOTELS*/
+       
+       .details p {
+           text-align: center;
+           margin-top: 10px;
+           font-family: 'Vollkorn', serif;
+           width: 100%;
+       }
+       
+       .details p img {
+           width: 20px;
+           height: 20px;
+           vertical-align: middle;
+       }
+       /*LE-PIED-DE-PAGE*/
+       
+       #fichier-produit footer {
+           float: left;
+           width: 97%;
+           background-color: #181818;
+           margin-left: 15px;
+       }
+       
+       #fichier-produit footer h3 {
+           text-align: center;
+           margin-top: 44px;
+           color: white;
+           font-family: 'Vollkorn', serif;
+       }
+       
+       .footer-logo {
+           width: 100%;
+           margin-left: 75px;
+           margin-top: 44px;
+       }
+       
+       .footer-logo img {
+           float: left;
+           width: 10%;
+           margin-left: 42px;
+       }
+       /*-----------MEDIA-QUERIES------------*/
+       
+       @media screen and (max-width: 970px) {
+           #fichier-produit {
+               width: 100%;
+               margin: 0 auto;
+               overflow: hidden;
+           }
+           nav {
+               width: 100%;
+               margin-bottom: 15px;
+           }
+           .reseau {
+               width: 100%;
+               clear: both;
+               margin: 0px;
+           }
+           .reseau button {
+               padding: 5px;
+           }
+           .reseau-logo img {
+               width: 5%;
+           }
+           #form2 {
+               width: 100%;
+           }
+           #form2 form input {
+               width: 100px;
+           }
+           .logo {
+               width: 100%;
+           }
+           .logo img {
+           margin-left: 280px;
+          }
+           .details p {
+               width: 100%;
+           }
+           #container {
+               width: 100%;
+               margin: 0px;
+           }
+           .container-contenu {
+               width: 100%;
+               margin: 0px;
+           }
+           .container-sous {
+               width: 45%;
+           }
+           .container-sous button {
+               padding: 2px;
+           }
+           #fichier-produit footer {
+               width: 100%;
+               margin-left: 0px;
+           }
+           .footer-logo img {
+               margin-left: 20px;
+           }
+           /*            FORMAT-MOBILE*/
+           @media screen and (max-width: 500px) {
+               #fichier-produit {
+                   width: 100%;
+                   margin: 0 auto;
+                   overflow: hidden;
+               }
+               nav {
+                   width: 100%;
+                   margin-bottom: 15px;
+               }
+               .reseau {
+                   width: 100%;
+                   clear: both;
+                   margin: 0px;
+               }
+               #form2 {
+                   width: 100%;
+               }
+               #form2 form {
+                   border: 2px solid black;
+                   padding: 0px;
+                   margin-top: 50px;
+                   display: inline-block;
+               }
+               #form2 form input {
+                   width: 30px;
+               }
+               .logo {
+                   width: 100%;
+               }
+               .logo img {
+                   margin-left: 60px;
+                   margin-top: 40px;
+                   width: 30%;
+               }
+               .details p {
+                   width: 100%;
+               }
+               #container {
+                   width: 100%;
+               }
+               .container-contenu {
+                   width: 100%;
+               }
+               .container-sous {
+                   width: 100%;
+                   margin-left: 0px;
+               }
+               container-contenu img {
+                   width: 100%;
+               }
+               .container-sous button {
+                   padding: 0;
+               }
+               #fichier-produit footer {
+                   width: 100%;
+                   margin-left: 0px;
+               }
+               .footer-logo img {
+                   /*            float: none;*/
+                   margin-left: 5px;
+               }
+           }
+           
+            #fichier-article {
+                            width: 960px;
+                            margin: 0 auto;
+
+                        }
+
+                      /*FORMULAIRE-DE-RECHERCHE*/
+
+                        #formulaire-form{
+                            width: 100%;
+                        }
+
+                       #formulaire-form .form {
+                            background-color: #EEEDEB;
+                            opacity: 0.9;
+                            height: 90px;
+                            margin-top: 20px;
+                            width: 100%;
+                        }
+                        .form button {
+                            margin-top: 20px;
+                            padding: 10px;
+                            width: 20%;
+                            background-color: #753C52;
+                            color: azure;
+                            margin-left: 10px;
+                            font-size: 1em;
+                        }
+                        .form label {
+                            margin-left: 10px;
+                            font-size: 1.4em;
+                        }
+                        .form input {
+                            margin-left: 10px;
+                        }
+                       
+                       /* LE-SLIDER*/
+
+                       #slider {
+                            width: 100%;
+                        }
+
+                        #slider h3 {
+                            text-align: center;
+                            margin-top: 40px;
+                            font-size: 1.8em;
+                            font-family: 'Lato', sans-serif;
+                        }
+                        .slide-img img {
+                            width: 100%;
+                            height: 430px;
+                            margin-top: 40px;
+                        }
+
+                       /* DETAILS*/
+
+                        #description {
+                            width: 100%;
+                        }
+                        .sous-description {
+                            width: 66%;
+                            float: left;
+                        }
+                        .sous-description article {
+                            float: left;
+                            width: 23%;
+                            margin-left: px;
+                            border-left: 1px solid gray;
+                            padding: 20px;
+                            margin-top: 30px;
+                        }
+                        .sous-description article p {
+                            margin-top: 20px;
+                        }
+                        .sous-description h5 {
+                            font-family: 'Lato', sans-serif;
+                            color: #753C52;
+                        }
+
+                         /* AVANTAGE*/
+
+                        #avantage {
+                            width: 32%;
+                            float: left;
+                            background-color: #F0F0F0;
+                            height: 789px;
+                        }
+                        .avantage-entete h4 {
+                            text-align: center;
+                            margin-top: 40px;
+                        }
+                        .avantage-entete button {
+                            margin-top: 40px;
+                            padding: 10px;
+                            width: 100%;
+                            background-color: #753C52;
+                            color: azure;
+                            font-size: 1.5em;
+                        }
+                        .avantage-contenu h3 {
+                            margin-top: 90px;
+                            margin-bottom: 30px;
+                            text-align: center;
+                            color: #753C52;
+                        }
+                        .avantage-contenu p {
+                            margin-top: 20px;
+                            vertical-align: middle;
+                            color: #753C52;
+                            font-size: 1.1em;
+                        }
+
+                       /* CARACTERISTIQUES*/
+
+                        #caracteristiques {
+                            width: 66%;
+                            float: left;
+                        }
+                        #caracteristiques article {
+                            float: left;
+                            width: 100%;
+                        }
+                        #caracteristiques h3 {
+                            font-family: 'Lato', sans-serif;
+                            width: 100%;
+                        }
+                        #caracteristiques li {
+                            font-family: 'Lato', sans-serif;
+                        }
+                        #caracteristiques p {
+                            width: 100%;
+                            font-family: 'open sans', sans-serif;
+                        }
+
+                       /* PIED-PAGE*/
+
+                        #fichier-article footer {
+                            float: left;
+                            width: 100%;
+                            margin-top: 30px;
+                            margin-bottom: 25px;
+                        }
+                        #contact {
+                            float: left;
+                            width: 20%;
+                            background-color: #000000;
+                            color: white;
+                        }
+                        .frame iframe {
+                            width: 70%;
+                        }
+                        
+
+                        /*-----------MEDIA-QUERIES------------*/
+
+                         @media screen and (max-width: 960px){
+                             #fichier-article{
+                            width: 100%;
+                            overflow: hidden;
+                        }
+
+                         #formulaire-form .form {
+                            width: 100%;
+                            display: block;
+                        }
+                        .form button {
+                            padding: 5px;
+                            width: 40%;
+                            font-size: 1em;
+                        }
+                        #slider {
+                            width: 100%;
+                            margin-right: 0px;
+                            margin-left: 0px;
+                             margin-top: 30px;
+                        }
+                        .slide-img img {
+                            width: 100%;
+                            margin-right: 0px;
+                            margin-left: 0px;
+                            height: 300px;
+                        }
+
+                        #description {
+                            width: 100%;
+                        }
+                        .sous-description {
+                            width: 60%; 
+                        }
+                        .sous-description article{
+                            float: none;
+                        }
+                        #avantage {
+                            width: 40%;
+                        }
+                        .avantage-entete button {
+                           
+                            padding: 3px;
+                            font-size: 1.1em;
+                        }
+
+                        #fichier-article footer {
+                            float: left;
+                            width: 100%;
+                            margin-top: 10px;
+                            margin-bottom: 0px;
+                        }
+                        #contact {
+                            width: 100%;
+                        }
+                        .frame iframe {
+                            margin-top: 10px;
+                            width: 100%;
+                            height: 300px;
+                        }    
+
+                         }
+
+
+                       /* POUR MOBILES*/
+
+                     @media screen and (max-width: 500px){
+                        #fichier-article{
+                            width: 100%;
+                            overflow: hidden;
+                        }
+
+                        #formulaire-form .form {
+                            width: 100%;
+                            display: block;
+                        }
+                        .form button {
+                            padding: 3px;
+                            width: 40%;
+                            font-size: 0.7em;
+                        }
+                        .form input{
+                            width: 35%;
+                        }
+                         #slider {
+                            width: 100%;
+                            margin-right: 0px;
+                            margin-left: 0px;
+                             margin-top: 30px;
+                        }
+                        #slider h3 {
+                            display: none;
+                        }
+
+                        .slide-img img {
+                            width: 100%;
+                            margin-right: 0px;
+                            margin-left: 0px;
+                            height: 230px;
+                        }
+                        #description {
+                            width: 100%;
+                        }
+                        .sous-description {
+                            width: 100%;
+                            display: inline-block;
+                        }
+                        .sous-description article {
+                            display: inline-block;
+                            width: 100%;
+                           
+                        }
+                        #avantage {
+                            width: 100%;
+                            clear: both;
+                            float: none;
+                        }
+
+                        .avantage-entete button {
+                           
+                            padding: 3px;
+                            font-size: 1em;
+                        }
+                        #caracteristiques {
+                            width: 100%;
+                            margin-left: 0px;
+                            padding: 0px;
+                        }
+                        #caracteristiques article {
+                            width: 100%;
+                        }
+                        #caracteristiques p {
+                            width: 90%;
+                            font-family: none;
+                            margin-left: 0px;
+
+                     }
+                     #caracteristiques li {
+                            font-family: none;
+                            width: 90%;
+                        }
+                        #fichier-article footer {
+                            float: left;
+                            width: 100%;
+                            margin-top: 10px;
+                            margin-bottom: 0px;
+                        }
+                        #contact {
+                            
+                            width: 100%;
+        
+                        }
+                        .frame iframe {
+                            width: 100%;
+                            height: 240px;
+                        }    
+
+                 }
